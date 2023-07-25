@@ -1,0 +1,13 @@
+[package]
+name = "trie"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+keccak-hasher = { path = "../keccak-hasher" }
+parity-scale-codec = "3.6.4"
+rlp = "0.5.2"
+rocksdb = "0.21.0"
+trie-db = "0.27.1"

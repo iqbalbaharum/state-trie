@@ -1,0 +1,17 @@
+[package]
+name = "keccak-hasher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hash-db = "0.16.0"
+hash256-std-hasher = { version = "0.15.2", default-features = false}
+tiny-keccak = { version = "2.0.2", features = ["keccak"] }
+
+[features]
+default = ["std"]
+std = [
+  "hash-db/std",
+]
